@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Internship</title>
+	<link rel="stylesheet" type="text/css" href="ost.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="blur">
+	<ul>
+  		<li><a class="active" href="#Home">Home</a></li>
+		<li><a class="Login" href="#" onclick="loginform()">Login</a></li>
+  		<li><a class="Latest" href="#update">For Latest Updates</a></li>
+		<li><a class="Jobs" href="#Jobsti">Jobs</a></li>
+	</ul>
+	<div class="Search-bar" id="Home">
+			<input type="text" placeholder="Search Your Job" name="SearchJob" required>
+			<button type="submit" value="Submit"><i class="fa fa-search"></i></button>
+	</div>
+	<div class="job-section">
+	<h2 class="Jobs-title" id="Jobsti">Jobs</h2>
+	<br>
+	<br>
+	<br>
+		<div class="container">
+   			<div class="card-rows">
+    				<div class="card bg-success Stack">
+      					<div class="card-body text-center">
+        					<a href="#" class="card-text">Full Stack Developer</a>
+      					</div>
+    				</div>
+				<br>
+				<div class="card bg-success Data">
+      					<div class="card-body text-center">
+        					<a href="#" class="card-text">Data Science Developer</a>
+      					</div>
+    				</div>
+				<br>
+				<div class="card bg-success Content">
+      					<div class="card-body text-center">
+        					<a href="#" class="card-text">Content Writing</a>
+      					</div>
+    				</div>
+				<br>
+				<div class="card bg-success Web">
+      					<div class="card-body text-center">
+        					<a href="#" class="card-text">Web Scraping</a>
+      					</div>
+    				</div>
+				<br>
+				<br>
+				<br>
+  			</div>
+		</div>
+	</div>
+	<h2 class="Jobs-title" id="update">Banner</h2>
+	<div class="update-section"></div>
+</div>	
+<div id = "loginform">
+	<form>
+	<div class="container">
+		<label><b>Choose Usertype:</b></label>
+  		<select name="Users" id="Users">
+    				<option value="Admin">Admin</option>
+    				<option value="Student">Student</option>
+    				<option value="Employee">Employee</option>
+  			</select>
+  		<br><br>
+    		<label for="uname"><b>Username</b></label>
+	    	<input type="text" placeholder="Enter Username" name="uname" required>
+		<br>
+    		<label for="psw"><b>Password</b></label>
+    		<input type="password" placeholder="Enter Password" name="psw" required>
+		<br>
+		<br>
+    		<button type="submit">Submit</button>
+	</div>
+	</form>
+</div>
+<script type = "text/javascript">
+	function loginform(){
+		var blur = document.getElementById('blur')
+		blur.classList.toggle('active')
+		var loginform = document.getElementById('loginform')
+		loginform.classList.toggle('active')
+	}	
+</script>
+</body>
+</html>
