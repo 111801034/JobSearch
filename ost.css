@@ -1,0 +1,152 @@
+body {margin:0;}
+
+.Jobs-title {
+  text-align: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: azure;
+  background-color: black;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  z-index:1;
+  top: 0;
+  width: 100%;
+}
+
+.Login{
+  float: right;
+  margin-right:10%;
+}
+.Latest{
+  float: right;
+  margin-right:1%;
+}
+.Jobs{
+  float: right;
+  margin-right:1%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #63E5EA;
+  color: #E6431E;
+}
+
+li a:hover{
+  text-decoration:none;
+}
+
+.active {
+  background-color: #4CAF50;
+  float:left;
+}
+
+.Search-bar{
+  background-image:url("back.jpg");
+  background-repeat: no-repeat;
+  max-height:650px;
+}
+
+.Search-bar input[type=text] {
+  padding: 6px;
+  margin-top: 20%;
+  margin-bottom:70%;
+  margin-left:40%;
+  font-size: 17px;
+  border-color:red;
+  align:center;
+}
+
+.Search-bar button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border-color:green;
+  cursor: pointer;
+}
+
+.job-section{
+  background-image:url("job.jpg");
+  background-repeat: no-repeat;
+  max-height:1000px;
+}
+
+.card {
+  margin-left:30%;
+  margin-right:30%;
+  position: fixed;
+  z-index:0;
+}
+
+.card a{
+  color:cyan;
+}
+
+.card a:hover{
+  text-decoration:none;
+  color: #E6431E;
+}
+
+.update-section{
+  padding:300px;
+  background-color:#52E50D;
+}
+  
+#loginform
+{
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 600px;
+	padding: 50px;
+	box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+	background: #fff;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
+}
+#loginform.active
+{
+	top: 40%;
+	visibility: visible;
+	opacity: 1;
+	transition: 0.5s;
+}
+#loginform.active p
+{
+	font-weight: bold;
+  	color: #3333ff;
+  	opacity: .7;
+}
+#loginform a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background: #66ffff;
+  color: #cc6600;
+  text-decoration: none;
+  opacity: .7;
+}
+
+#blur.active
+{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
