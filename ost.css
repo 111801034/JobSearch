@@ -55,7 +55,7 @@ li a:hover{
 }
 
 .Search-bar{
-  background-image:url("back.jpg");
+  background-image:url("images/back.jpg");
   background-repeat: no-repeat;
   max-height:650px;
 }
@@ -81,7 +81,7 @@ li a:hover{
 }
 
 .job-section{
-  background-image:url("job.jpg");
+  background-image:url("images/job.jpg");
   background-repeat: no-repeat;
   max-height:1000px;
 }
